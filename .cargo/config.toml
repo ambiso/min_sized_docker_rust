@@ -5,9 +5,9 @@ rustflags = [
     "-Zlocation-detail=none",
     "-Zfmt-debug=none",
     "-Zunstable-options",
-    # "-Cpanic=immediate-abort",
-    "-Clink-arg=-nostartfiles",
+    "-Cpanic=immediate-abort",
+    # "-Clink-arg=-nostartfiles",
 ]
 
 [unstable]
-build-std = ["core", "compiler_builtins"]
+build-std = ["std", "core", "panic_abort", "compiler_builtins"]

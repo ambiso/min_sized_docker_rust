@@ -1,5 +1,5 @@
 FROM scratch
 
-COPY a.out /
+COPY target/x86_64-unknown-linux-musl/release/min_bin /min_bin
 
-CMD /a.out
+CMD /min_bin
